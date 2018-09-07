@@ -30,20 +30,55 @@ function longPlaneteerCalls(words) {
   }
 }
 
+////////////////////////////////////// loop inside loop
 function findTheCheese (foods) {
   var cheese = ["cheddar", "gouda", "camemberte"];
 
-  for (var i = 0; i < foods.length; i++) {
+  for (var i = 0; i < cheese.length; i++) {
 
-    if (cheese[0] === foods[i])
-      return foods[i];
-    else
-        if (cheese[1] === foods[i])
-        return foods[i];
-        else
-          if (cheese[2] === foods[i])
-          return foods[i];
+    for (var j = 0; j < foods.length; j++) {
+
+      if (cheese[i] === foods[j]) {
+        return cheese[i];
+      }
+    }
 
   }
-    return 'no cheese!';
+    return "no cheese!"
 }
+
+///////////////////////////////////// try if else inside if else
+
+// (var i = 0; i < foods.length; i++) {
+//
+//     if (cheese[0] === foods[i]) {
+//       return foods[i];
+//     }
+//     else {
+//         if (cheese[1] === foods[i]) {
+//         return foods[i];
+//       } else {
+//           if (cheese[2] === foods[i])
+//           return foods[i];
+//         }
+//     }
+//   }
+//     return 'no cheese!';
+// }
+
+////////////////////////////////////  else if
+// function findTheCheese (foods) {
+//   var cheese = ["cheddar", "gouda", "camemberte"];
+//
+//   for (var i = 0; i < foods.length; i++) {
+//
+//     if (cheese[0] === foods[i]) {
+//       return cheese[0];
+//     } else if (cheese[1] === foods[i]) {
+//         return cheese[1];
+//       } else if (cheese[2] === foods[i]) {
+//           return cheese[2];
+//         }
+//   }
+//     return 'no cheese!';
+// }
