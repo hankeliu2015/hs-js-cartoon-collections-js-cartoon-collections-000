@@ -1,12 +1,22 @@
 function dwarfRollCall(dwarves) {
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> d2cbe18151b8eb574ce87d3b71a40e607270992a
   var theNumberedDwarves = "";
   for (var i = 0 ; i < dwarves.length; i++) {
       theNumberedDwarves = theNumberedDwarves.concat(`${i+1}. ${dwarves[i]} `) //theNumberedDwarves = theNumberedDwarves + (`${i+1}. ${dwarves[i]} `);
   }
   return theNumberedDwarves;
+<<<<<<< HEAD
   //return `1. ${dwarves[1]} 2. ${dwarves[2]} 3. ${dwarves[3] 4. ${dwarves[4]}}`
 
+=======
+=======
+  // return `1. ${dwarves[1]} 2. ${dwarves[2]} 3. ${dwarves[3] 4. ${dwarves[4]}}`
+>>>>>>> a3c9bfb0f43d9fa94c99b2e183cdd2a9fa3cfeeb
+>>>>>>> d2cbe18151b8eb574ce87d3b71a40e607270992a
 }
 
 //dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
@@ -36,7 +46,7 @@ function longPlaneteerCalls(planeteerCalls) {
   }
 }
 
-////////////////////////////////////// loop inside loop
+////////////////////////////////////// loop inside loop , apple. goude, ..
 function findTheCheese (foods) {
   var cheese = ["cheddar", "gouda", "camemberte"];
 
@@ -51,6 +61,19 @@ function findTheCheese (foods) {
 
   }
     return "no cheese!"
+}
+
+function wordsWithB(words) {
+  var outPutArray = new Array(); 
+  
+  for (var i=0 ; i < words.length; i++) {
+    if (words[i][0] === 'b' ) {
+      
+      outPutArray.push(words[i]); 
+    }
+    return outPutArray; 
+  }
+  
 }
 
 ///////////////////////////////////// try if else inside if else
