@@ -64,16 +64,16 @@ function findTheCheese (foods) {
 }
 
 function wordsWithB(words) {
-  var outPutArray = new Array(); 
-  
+  var outPutArray = new Array();
+
   for (var i=0 ; i < words.length; i++) {
     if (words[i][0] === 'b' ) {
-      
+
       outPutArray.push(words[i]); 
     }
-    return outPutArray; 
-  }
   
+  }
+  return outPutArray;
 }
 
 ///////////////////////////////////// try if else inside if else
