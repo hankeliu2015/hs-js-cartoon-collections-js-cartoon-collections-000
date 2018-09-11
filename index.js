@@ -1,29 +1,35 @@
 function dwarfRollCall(dwarves) {
+
   var theNumberedDwarves = "";
   for (var i = 0 ; i < dwarves.length; i++) {
       theNumberedDwarves = theNumberedDwarves.concat(`${i+1}. ${dwarves[i]} `) //theNumberedDwarves = theNumberedDwarves + (`${i+1}. ${dwarves[i]} `);
   }
   return theNumberedDwarves;
+  //return `1. ${dwarves[1]} 2. ${dwarves[2]} 3. ${dwarves[3] 4. ${dwarves[4]}}`
+
 }
 
-//dwarfRollCall("Doc", "Dopey", "Bashful", "Grumpy");
+//dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
+//dwarfRollCall(dwarves);
+
+////////////////////////////////////////////// Summone Captain Planet. User a loop conver each element to upper case and add !.
 
 function summonCaptainPlanet(planeteerCalls){
 
   var upperCaseExclamation = new Array();
 
   for ( var i =0 ; i < planeteerCalls.length; i++) {
-      upperCaseExclamation[i] = planeteerCalls[i].toUpperCase() + '!'
+      upperCaseExclamation[i] = planeteerCalls[i].toUpperCase().concat('!') //upperCaseExclamation[i] = planeteerCalls[i].toUpperCase() + '!'
   }
 
-  return upperCaseExclamation
+  return upperCaseExclamation;
 }
 
 // summonCaptainPlanet("earth", "wind", "fire", "water", "heart")
 
-
-function longPlaneteerCalls(words) {
-  if (words.length >= 4) {
+///////////////////////////////////////// Long Planeteer Calls. User the array index length to decide
+function longPlaneteerCalls(planeteerCalls) {
+  if (planeteerCalls.length >= 4) {
     return true
   } else {
     return false
