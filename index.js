@@ -69,9 +69,9 @@ function wordsWithB(words) {
   for (var i=0 ; i < words.length; i++) {
     if (words[i][0] === 'b' ) {
 
-      outPutArray.push(words[i]); 
+      outPutArray.push(words[i]);
     }
-  
+
   }
   return outPutArray;
 }
